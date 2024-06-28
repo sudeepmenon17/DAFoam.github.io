@@ -100,7 +100,7 @@ After that, use the following command to run FI for case c2:
 mpirun -np 4 python runScript_FI.py -index=1 2>&1 | tee logOpt.txt
 </pre>
 
-Once the above two FI cases converge, reconstruct the data for the last optimization iteration (it should be 0.0050). Copy c1/0.0050 to tf_training/c1_data. Copy c2/0.0050 to tf_training/c2_data.
+Once the above two FI cases converge, reconstruct the data for the last optimization iteration (it should be 0.0050) using 'reconstructPar'. Create directories c1_data and c2_data in tf_training. Copy all the files from c1/0.0050 to tf_training/c1_data. Also, copy all the files from c2/0.0050 to tf_training/c2_data.
 
 Then, go to tf_training and run TensorFlow training:
 
